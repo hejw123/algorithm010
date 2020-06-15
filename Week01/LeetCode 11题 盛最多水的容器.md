@@ -1,4 +1,5 @@
 ## Java 暴力
+```java
 int maxHeight = 0;
 for( int i = 0 ; i < height.length - 1; i++ ) {
 	for (int j = i - 1 ; j < height.length ; j++) {
@@ -8,8 +9,10 @@ for( int i = 0 ; i < height.length - 1; i++ ) {
 	}
 }
 System.out.println(maxHeight);
+```
 
 ## Go
+```go
 func maxArea(height []int) int {
     i,j := 0,len(height) - 1
 	max,hg := 0,0
@@ -27,8 +30,10 @@ func maxArea(height []int) int {
 	}
     return max
 }
+```
 
 ## Java 
+```java
 int left = 0;  // 左指针
 int right = height.length - 1 ; // 右指针 (这里的减1，指的是数组真正的下标)
 int maxHeight = 0; // 记录最大的面积
@@ -45,8 +50,10 @@ while (left <= right) {
 	maxHeight = maxHeight > area ? maxHeight : area ;
 } 
 System.out.println(maxHeight);
+```
 
 ## Python 
+```python
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         i = 0
@@ -60,8 +67,10 @@ class Solution:
                 maxheight = max((j - i) * height[i], maxheight)
                 i = i + 1
         return  maxheight
+```        
 
 ## C 
+```c
 int maxArea(int* height, int heightSize){
     int i = 0 ;
     int j = heightSize - 1;
@@ -81,8 +90,10 @@ int maxArea(int* height, int heightSize){
 
     return max;
 }
+```
 
 ## PHP
+```php
 class Solution {
 
     /**
@@ -110,3 +121,4 @@ class Solution {
         return $max;
     }
 }
+```

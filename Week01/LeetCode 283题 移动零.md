@@ -1,4 +1,5 @@
 ## Java
+```java
 class Solution {
     public void moveZeroes(int[] nums) {
         int j = 0;
@@ -13,8 +14,10 @@ class Solution {
         }
     }
 }
+```
 
 ## C 
+```c
 void moveZeroes(int* nums, int numsSize){
     int i = 0;
     int j = 0;
@@ -31,8 +34,10 @@ void moveZeroes(int* nums, int numsSize){
         }
     }
 }
+```
 
 ## Go
+```go
 func moveZeroes(nums []int)  {
 
     j := 0
@@ -48,8 +53,10 @@ func moveZeroes(nums []int)  {
 
     fmt.Println(nums)
 }
+```
 
 ## Python 
+```python
 j = 0
 for i in range(len(nums)):
     if nums[i] != 0 :
@@ -59,8 +66,9 @@ for i in range(len(nums)):
         j = j + 1
 
 return nums
-
+```
 ## PHP 
+```php
 function moveZeroes(&$nums) {
     $j = 0;
     for ($i = 0 ; $i < count($nums) ; $i ++) {
@@ -74,4 +82,4 @@ function moveZeroes(&$nums) {
     }
     return $nums;
 }
-
+```

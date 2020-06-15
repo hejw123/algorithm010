@@ -1,4 +1,5 @@
 ## Java 栈的数据结构就可以解决
+```java
 public static boolean isValid(String s) {
 	// 两种特殊情况 一种空 另外是 奇数 
     if(s.length() == 0 ) return true ;
@@ -18,8 +19,10 @@ public static boolean isValid(String s) {
     }
     return stack.isEmpty();
 }
+```
 
 ## Go 数组解决
+```go
 func isValid(s string) bool {
 	if len(s) == 0 { return true }
 	if len(s) % 2 != 0 { return false }
@@ -46,3 +49,4 @@ func isValid(s string) bool {
 
 	return subscript == 0 || (subscript != len(s) && sub[subscript - 1] == 0)
 }
+```

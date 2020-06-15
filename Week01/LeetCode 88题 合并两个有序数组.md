@@ -1,5 +1,5 @@
-
 ## Java 
+```java
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1;
@@ -17,8 +17,10 @@ class Solution {
         }
     }
 }
+```
 
 ## Go 
+```go
 func merge(nums1 []int, m int, nums2 []int, n int)  {
     start , end , p := m - 1 ,n - 1 , m + n - 1
 	for p > -1 {
@@ -40,3 +42,4 @@ func merge(nums1 []int, m int, nums2 []int, n int)  {
 		p --
 	}
 }
+```

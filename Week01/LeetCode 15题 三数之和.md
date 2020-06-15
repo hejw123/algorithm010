@@ -1,4 +1,5 @@
 ## Java 暴力解决 
+```java
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         if (nums == null || nums.length < 3) return  Collections.emptyList();
@@ -17,8 +18,10 @@ class Solution {
         return new ArrayList<>(result);
     }
 }
+```
 
 ## Go 暴力解决 
+```go
 func threeSum(nums []int) [][]int {
     var result [][]int
 	sort.Ints(nums)
@@ -46,8 +49,10 @@ func threeSum(nums []int) [][]int {
 
 	return result
 }
+```
 
 ## Java 两次暴力 一层hash表
+```java
 public static List<List<Integer>> HashdirectlySolution(int[] nums) {
     //  a + b = -c  a = -c - b
     if( nums == null || nums.length < 3 ) return Collections.emptyList();
@@ -78,8 +83,10 @@ public static List<List<Integer>> HashdirectlySolution(int[] nums) {
 
     return new ArrayList<>(result);
 }
+```
 
 ## Go 
+```go
 func HashdirectlySolution(nums[] int) [][] int{
 
 	var result [][]int;
@@ -108,8 +115,10 @@ func HashdirectlySolution(nums[] int) [][] int{
 	}
 	return result
 }
+```
 
 ## Java 双指针移动 
+```java
 public static List<List<Integer>> doubledirectlySolution(int[] nums) {
     //  a + b = -c  a = -c - b
     if( nums == null || nums.length < 3 ) return Collections.emptyList();
@@ -135,9 +144,10 @@ public static List<List<Integer>> doubledirectlySolution(int[] nums) {
     }
     return new ArrayList<>(result);
 }
-
+```
 
 ## Go 双指针移动
+```go
 func doubledirectlySolution(nums[] int) [][] int{
 	var result [][]int
 	if nums == nil || len(nums) < 3 {
@@ -169,3 +179,4 @@ func doubledirectlySolution(nums[] int) [][] int{
 	}
 	return result
 }
+```

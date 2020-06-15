@@ -1,4 +1,5 @@
 ## Java 暴力解法
+```java
 int[] subscript = new int[2];
 // 这里的 length - 1 只需要循环到数组前一个数即可
 for (int i = 0 ; i < nums.length - 1 ; i ++) { 
@@ -12,8 +13,10 @@ for (int i = 0 ; i < nums.length - 1 ; i ++) {
 	}
 }
 return subscript ;
+```
 
 ## Java 哈希表
+```java
 Map<Integer , Integer >HashSum = new HashMap<>();
 for (int i = 0 ; i < nums.length ; i ++) {
     int complement = target - nums[i] ;
@@ -23,8 +26,10 @@ for (int i = 0 ; i < nums.length ; i ++) {
     HashSum.put(complement,i);
 }
 return new int[2] ;
+```
 
 ## Go 
+```go
 // go 的 map 实现是用 hash表完成的
 Map := map[int]int{}
 for i , v:= range nums {
@@ -34,16 +39,20 @@ for i , v:= range nums {
 	Map[target - v] = i
 }
 return []int{}
+```
 
 ## Python 其实是用 Python字典
+```python
 hashMap = {}
 for i,num in enumerate(nums) :
     if hashMap.get(num) is not None :
-        return [hashMap.get(num),i];
+        return [hashMap.get(num),i]
     hashMap[target - num] = i
 return []
+```
 
 ## PHP 数组特殊性
+```php
 function twoSum($nums, $target) {
     $twonums = array(); // 创建数组
     // 循环 并判断是不是存在 数组中 
@@ -57,5 +66,5 @@ function twoSum($nums, $target) {
     // 返回数组
     return array();
  }
-
+```
 

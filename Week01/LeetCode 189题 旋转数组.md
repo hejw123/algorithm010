@@ -1,4 +1,5 @@
 ## Java (使用额外的空间)
+```java
 public static void rotate2(int[] nums, int k){
     int[] nums2 = new int[nums.length];
     for (int i = 0 ; i < nums.length ; i ++) {
@@ -8,8 +9,10 @@ public static void rotate2(int[] nums, int k){
        nums[j] = nums2[j];
     }
 }
+```
 
 ## Go (使用额外的空间)
+```go
 func rotate(nums []int, k int)  {
 	nums2 := make([]int,len(nums))
 	for i , v := range nums {
@@ -19,8 +22,10 @@ func rotate(nums []int, k int)  {
 		nums[i] = v
 	}
 }
+```
 
 ## Java 反转数组
+```java
 class Solution {
     public void rotate(int[] nums, int k) {
         k %= nums.length;
@@ -39,8 +44,10 @@ class Solution {
         }
     }
 }
+```
 
 ## Go 
+```go
 func reverse (nums[] int , start int , end int) {
 	for start < end {
 		nums[start] ,nums[end] = nums[end] ,nums[start]
@@ -54,3 +61,4 @@ func reverserotate(nums []int, k int)  {
 	reverse(nums , 0 , k - 1 )
 	reverse(nums ,  k ,len(nums) - 1)
 }
+```

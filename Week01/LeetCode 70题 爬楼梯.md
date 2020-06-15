@@ -1,4 +1,5 @@
 ##  斐波那契数列
+```java
 int first = 1;  // 第一个值
 int second = 2; // 第二个值
 int third = 0;  // 第三个值
@@ -16,3 +17,4 @@ for( int i = 1 ; i <= n ; i++ ) {
 	}
 }
 return second
+```

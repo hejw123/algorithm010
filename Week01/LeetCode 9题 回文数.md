@@ -1,4 +1,5 @@
 ## Go 自己思考出来的 就很长～～～
+```go
 func isPalindrome(x int) bool {
 	// 因为所有的负数都不是回文数 不包括0的所有能被10整除的都不是回文数
     if x < 0 || (x % 10 == 0 && x != 0) {
@@ -30,8 +31,10 @@ func isPalindrome(x int) bool {
 	// 最后返回 
 	return true
 }
+```
 
 ## Java 寻找一半的对对应的一半是不是相等
+```java
 class Solution {
     public boolean isPalindrome(int x) {
         // 前面的特殊条件判读的一样
@@ -48,10 +51,12 @@ class Solution {
         return ( nb == x || nb / 10 == x) ;
     }
 }
-
+```
 
 ## Python 极其简单 
+```python
 class Solution:
     def isPalindrome(self, x: int) -> bool:
     	// 就这一行代码 搞定！
         return str(x)[::-1] == str(x)
+```
